@@ -37,7 +37,17 @@
                 throw new InvalidOperationException($"No selector for {type.Name}");
             }
 
-            return (_collections[type] as List<T>)!.First(storedItem => (selector as Func<T, K>)!(storedItem)!.Equals(id));
+            Func<T, K> typedSelector;
+            try
+            {
+                typedSelector = (Func<T, K>)selector;
+            }
+            catch(InvalidCastException)
+            {
+                throw new InvalidOperationException($"No selector for {type.Name} with id type {typeof(K).Name}");
+            }
+
+            return (_collections[type] as List<T>)!.First(storedItem => typedSelector(storedItem)!.Equals(id));
         }
         public bool Remove<T>(T item)
         {
