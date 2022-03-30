@@ -17,7 +17,7 @@ using Untyped;
 
 Create instance of collection.
 ```c#
-UntypedStorage storage = new UntypedStorage();
+UntypedCollection storage = new UntypedCollection();
 ```
 
 
