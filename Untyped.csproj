@@ -1,9 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>NikitaBokov.Util.$(AssemblyName)</PackageId>
+    <Authors>Nikita Bokov</Authors>
+    <Company>Nikita Bokov</Company>
+    <Description>Collection that can store different types at the same time.</Description>
+    <RepositoryUrl>https://github.com/ULTROwaka/Untyped</RepositoryUrl>
+    <PackageTags>Collection, Collections, Type, Types, Storage, Observable</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>Add implementation of IObservable.</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
