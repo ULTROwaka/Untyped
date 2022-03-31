@@ -34,7 +34,7 @@ storage.Add(17.5f);
 storage.Add(19.3f);
 storage.Add(21.7f);
 //Custom class
-storage.Add(new User(1336, "Alexsey", new DateOnly(1996, 6, 9)));
+storage.Add(new User(1336, "Alexey", new DateOnly(1996, 6, 9)));
 storage.Add(new User(1337, "Pavel", new DateOnly(1997, 7, 10)));
 storage.Add(new User(1338, "Sergey", new DateOnly(1998, 8, 11)));
 storage.Add(new User(1339, "Fedor", new DateOnly(1999, 9, 12)));
