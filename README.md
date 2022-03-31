@@ -70,4 +70,16 @@ storage.Remove<User,int>(1337);
 
 ```
 
+Like a cool bonus, you can subscribe on adding new items in collection
+```c#
+//you can use System.Reactive for more flexible usage of subscription
+storage.GetSubscriber<string>().Subscribe(Console.WriteLine);
+storage.Add("Kirill");
+/*
+* Output:
+* Kirill
+*/
+```
+
+
 That's all, folks!
